@@ -31,7 +31,7 @@ bot = Client(
 
 @bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text("Hi!\n\nGive /txt Command to Downlaod From a Text file.\n")
+    editable = await m.reply_text("Hi!\n\nGive /shuklapanditnakul Command to Downlaod From a Text file.\n")
 
 
 @bot.on_message(filters.command("restart"))
@@ -41,7 +41,7 @@ async def restart_handler(_, m):
 
 
 
-@bot.on_message(filters.command(["txt"]))
+@bot.on_message(filters.command(["shuklapanditnakul"]))
 async def account_login(bot: Client, m: Message):
     editable = await m.reply_text('Hi\n\nTO download a test file send here » ')
     input: Message = await bot.listen(editable.chat.id)
@@ -162,8 +162,8 @@ async def account_login(bot: Client, m: Message):
 
             try:  
                 
-                cc = f'**Vid_id  »** {str(count).zfill(3)}\n**Title  »** {name1} {res} 🄻🄿🅁🄿🄳🅅.mkv\n**Batch »** {raw_text0}\n**Download by »** {raw_text3}\n\n'
-                cc1 = f'**Vid_id  »** {str(count).zfill(3)}\n**Title »** {name1} 🄻🄿🅁🄿🄳🅅.pdf \n**Batch »** {raw_text0}\n**Download by »** {raw_text3}\n\n'
+                cc = f'**Vid_id  »** {str(count).zfill(3)}\n**Title  »** {name1} {res} nakul.mkv\n**Batch »** {raw_text0}\n**Download by »** {raw_text3}\n\n'
+                cc1 = f'**Vid_id  »** {str(count).zfill(3)}\n**Title »** {name1} nakul.pdf \n**Batch »** {raw_text0}\n**Download by »** {raw_text3}\n\n'
                 if "drive" in url:
                     try:
                         ka = await helper.download(url, name)
