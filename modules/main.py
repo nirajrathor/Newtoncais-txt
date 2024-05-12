@@ -31,7 +31,7 @@ bot = Client(
 
 @bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text("Hi!\n\nGive /shuklapanditnakul Command to Downlaod From a Text file.\n")
+    editable = await m.reply_text("Hi!\n\nGive /lucky Command to Downlaod From a Text file.\n")
 
 @bot.on_message(filters.command("stop"))
 async def restart_handler(_, m):
